@@ -12,9 +12,9 @@ class MethodPractice : MonoBehaviour
 
     void OnValidate()
     {
-        min = Mathf.Min(a, b);
-        max = Mathf.Max(a, b);
-        abs = Mathf.Abs(a);
-        power = Mathf.Pow(a, b);
+        min = Mathf.Min(a, b);      // minimum
+        max = Mathf.Max(a, b);      // maximum
+        abs = Mathf.Abs(a);         // abszolut ertek
+        power = Mathf.Pow(a, b);    // hatvanyozas
     }
 }

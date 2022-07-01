@@ -37,11 +37,11 @@ public class BoolPractice : MonoBehaviour
         int i3 = 10;
         string st = "AAA";
 
-        bool aNegated = !a;
-        bool aOrB = a || b; // "|" - AltGr + W
-        bool aAndB = a && b;
+        bool aNegated = !a;         // pl.: if(!bool && run ==1) - not bool and run is 1
+        bool aOrB = a || b;         // true = ha egy vagy az összes true ("|" - AltGr + W)
+        bool aAndB = a && b;        // true = ha az összes true
 
-        bool x = a || b && c;       // true or false = true, false or false = false 
+        bool x = a || b && c;       // true OR false = true --> false AND false = false 
         bool y = (i1 > i2) || b;    // false
         bool z = (i2 <= i3) && st == "BBB";   // false
     }

@@ -334,9 +334,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60d2755ef428b084491936c934679571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 0
-  exponent: 0
-  eredmeny: 0
+  num: 2
+  exponent: 3
+  eredmeny: 8 (23)
 --- !u!4 &1401779842
 Transform:
   m_ObjectHideFlags: 0
@@ -457,7 +457,7 @@ GameObject:
   - component: {fileID: 1839520491}
   - component: {fileID: 1839520490}
   m_Layer: 0
-  m_Name: NumAndWord
+  m_Name: NumToWords
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -476,7 +476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   n: 0
-  a: 0,zero
+  output: zero
 --- !u!4 &1839520491
 Transform:
   m_ObjectHideFlags: 0

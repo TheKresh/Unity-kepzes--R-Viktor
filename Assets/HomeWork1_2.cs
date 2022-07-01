@@ -7,11 +7,12 @@ public class HomeWork1_2 : MonoBehaviour
 
     [SerializeField] int num;
     [SerializeField] int exponent;
-    [SerializeField] int eredmeny;
+    [SerializeField] string eredmeny;
+    int i;
 
     void OnValidate()
     {
-        eredmeny = (num * exponent) + num; // kiirja a num hatvanyat, de nem tudom kiiratni vele zarojelben a num es az exponentben megadott szamokat
-        /* eredmeny = (x + "(" + num + exponent + ")");  // ez igy mennyire szar elkepzeles? */
+        i = (int) Mathf.Pow(num, exponent);
+        eredmeny = i + " " + "(" + num + exponent + ")";
     }
 }
