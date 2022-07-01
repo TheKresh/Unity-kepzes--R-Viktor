@@ -14,14 +14,15 @@ public class FizzBuzz : MonoBehaviour
     {
         int i = 0;
 
-        while (n> i)
+        while (n > i)
         {
             i++;
+            Debug.Log(i);
 
             if (i % 3 == 0)
             {
                 Debug.Log("fizz");
-            }    
+            }
             if (i % 5 == 0)
             {
                 Debug.Log("buzz");
@@ -29,9 +30,7 @@ public class FizzBuzz : MonoBehaviour
             if (i % 3 == 0 && i % 5 == 0)
             {
                 Debug.Log("fizzbuzz");
-            }
-            else
-                Debug.Log(i);
+            }         
         }
     }
 }
