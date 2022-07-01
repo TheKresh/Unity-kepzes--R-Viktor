@@ -14,7 +14,7 @@ public class FizzBuzz : MonoBehaviour
     {
         int i = 0;
 
-        while (n > i)
+        while (i < n)
         {
             i++;
             Debug.Log(i);

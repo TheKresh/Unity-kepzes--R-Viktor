@@ -27,12 +27,12 @@ public class ControlStructuresPractice : MonoBehaviour
         while (i<= 10)
         {
             Debug.Log(i);
-            i++;
+            i++;                        // egyesevel elszamol 10-ig
         }
 
         for (int j = 0; j < n; j++)
         {
-            Debug.Log(i * 3);
+            Debug.Log(i * 3);           // N-ben megadottszor megcsinálja, de ugyan az a végeredmény --> (33)
         }
     }
 }
