@@ -1,11 +1,12 @@
 using UnityEngine;
 
-public class HomeWork1_1 : MonoBehaviour
+public class EvenOdd : MonoBehaviour
 {
     /* Írj programot, ami egy "num" bemenetben megadott egész számról, eldönti hogy páros-e! 
      * A program egy string típusú kimenetbe írja be, a PÁROS vagy a PÁRATLAN szót. */
 
     [SerializeField] int num;
+    [Space]
     [SerializeField] string PárosVagyPáratlan;
 
     void OnValidate()

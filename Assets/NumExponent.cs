@@ -1,12 +1,13 @@
 using UnityEngine;
 
-public class HomeWork1_2 : MonoBehaviour
+public class NumExponent : MonoBehaviour
 {
     /* Bemenetben megadott a "num" és az "exponent" egész számok. Írj programot, ami egy kimeneti változóba beírja a num szám az exponent-edik hatványát.
     Pl.num = 3, exponent = 2, végeredmény = 9 (32) */
 
     [SerializeField] int num;
     [SerializeField] int exponent;
+    [Space]
     [SerializeField] string eredmeny;
     int i;
 

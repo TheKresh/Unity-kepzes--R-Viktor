@@ -1,16 +1,17 @@
 using UnityEngine;
 
-public class HomeWork1_3 : MonoBehaviour
+public class ThreeStringListing : MonoBehaviour
 {
     /* Írj programot, ami összeûz 3 bemeneten megadott string-et vesszõvel elválasztva! Az eredmény egy kimeneti string-be kerüljön be! */
 
     [SerializeField] string word1;
     [SerializeField] string word2;
     [SerializeField] string word3;
-    [SerializeField] string merged;
+    [Space]
+    [SerializeField] string listing;
 
     void OnValidate()
     {
-        merged = word1 + "," + word2 + "," + word3;
+        listing = word1 + "," + word2 + "," + word3;
     }
 }
