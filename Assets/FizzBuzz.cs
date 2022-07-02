@@ -17,22 +17,23 @@ public class FizzBuzz : MonoBehaviour
         while (i < n)
         {
             i++;
-            Debug.Log(i);
 
-            if (i % 3 == 0)
-            {
-                Debug.Log("fizz");
-            }
-            if (i % 5 == 0)
-            {
-                Debug.Log("buzz");
-            }
             if (i % 3 == 0 && i % 5 == 0)
             {
                 Debug.Log("fizzbuzz");
-            }         
+            }
+            else if (i % 3 == 0)
+            {
+                Debug.Log("fizz");
+            }
+            else if (i % 5 == 0)
+            {
+                Debug.Log("buzz");
+            }
+            else
+            {
+                Debug.Log(i);
+            }
         }
     }
 }
-
-// elszámol az N-ben megadott számig, de nem helyetesiti be a szám helyere a fizz-t vagy a buzz-t, hanem csak utána kiirja
