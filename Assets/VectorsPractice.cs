@@ -23,7 +23,7 @@ public class VectorsPractice : MonoBehaviour
         // szorzat
         product = myFirst3DVector * multiplier;
 
-        // vekktor hossza
+        // vektor hossza
         lenght = myFirst2DVector.magnitude;
 
         // normalizalt

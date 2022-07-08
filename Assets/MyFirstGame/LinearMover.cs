@@ -21,7 +21,7 @@ public class LinearMover : MonoBehaviour
         
         Vector3 velocity = new Vector3(x, y, 0); // "izometrikus nezetben" - Vector3 velocity = new Vector3(x, 0, z);
 
-        transform.position += velocity.normalized * speed * Time.deltaTime;
+        transform.position += velocity.normalized * speed * Time.deltaTime;     // velocity - sebesség
     }
 
     float ToAxis(bool positive, bool negative) 
