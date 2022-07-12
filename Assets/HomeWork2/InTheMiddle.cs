@@ -7,8 +7,10 @@ public class InTheMiddle : MonoBehaviour
     [SerializeField] Vector3 p1;
     [SerializeField] Vector3 p2;
 
-    void OnValidate()
+    void Update()
     {
-        transform.position = (p1 + p2) / 2f;    // gyakorlatilag átlagolta a p1 és a p2 pozíció összegét
+        Vector3 average = (p1 + p2) / 2;       
+        transform.position = average;
+        // vagy egyszerûbben így --> transform.position = (p1 + p2) / 2f; - gyakorlatilag átlagolta a p1 és a p2 pozíció összegét
     }
 }

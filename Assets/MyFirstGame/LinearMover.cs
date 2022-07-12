@@ -7,6 +7,7 @@ public class LinearMover : MonoBehaviour
     [SerializeField] KeyCode rightKey;
     [SerializeField] KeyCode leftKey;
     [SerializeField] float speed;
+    [SerializeField] float rotationSpeed;
     
     // Update csak akkor fut le ha play modeban vagyunk
     void Update()
@@ -19,9 +20,21 @@ public class LinearMover : MonoBehaviour
         float x = ToAxis(right, left);
         float y = ToAxis(up, down);
         
-        Vector3 velocity = new Vector3(x, y, 0); // "izometrikus nezetben" - Vector3 velocity = new Vector3(x, 0, z);
+        Vector3 velocity = new Vector3(x, 0, y);
 
         transform.position += velocity.normalized * speed * Time.deltaTime;     // velocity - sebesség
+
+                                                                                /* Mathf.Sin(45 * Mathf.Deg2Rad); */
+
+        if (velocity != Vector3.zero)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(velocity);
+
+            transform.rotation = Quaternion.RotateTowards(
+                transform.rotation,
+                targetRotation,
+                rotationSpeed * Time.deltaTime);
+        }
     }
 
     float ToAxis(bool positive, bool negative) 
