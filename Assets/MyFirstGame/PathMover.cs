@@ -15,7 +15,7 @@ public class PathMover : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.green;
+        Gizmos.color = Color.magenta;
         Gizmos.DrawWireSphere(p1.position, 0.25f);
         Gizmos.DrawWireSphere(p2.position, 0.25f);
         Gizmos.DrawLine(p1.position, p2.position);
