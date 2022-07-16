@@ -15,12 +15,13 @@ public class HomeWork3_2 : MonoBehaviour
     void Update()
     {
         Vector3 position = a.position - b.position;
+        float x = Mathf.Clamp01(f);
 
-        if (f <= 0)
+        if (x <= 0)
             position = a.position;
-        else if (f >= 1)
+        else if (x >= 1)
             position = b.position;
-        else if (f == 0.5)
+        else if (x == 0.5)
             position = (a.position + b.position) / 2;
         /* else if (f == 0.4)
             position = (a.position + b.position - v) / 2;       // v -vel valami baja van
