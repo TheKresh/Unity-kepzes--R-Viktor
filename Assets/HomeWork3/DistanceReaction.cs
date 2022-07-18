@@ -12,12 +12,13 @@ public class DistanceReaction : MonoBehaviour
 
     void Update()
     {
-        
+        float distance = Vector3.Distance(a.position, b.position);
+        float enoughDistance = distance < value;
     }
 
     private void OnDrawGizmos()
     {
-         if ()
+        if ()
         {
             Gizmos.color = Color.green;
             Gizmos.DrawLine(a.position, b.position);
@@ -27,4 +28,4 @@ public class DistanceReaction : MonoBehaviour
             Gizmos.color = Color.red;
             Gizmos.DrawLine(a.position, b.position);
         } */
-    }
+    } 

@@ -8,7 +8,14 @@ Nem lehet pl: a pozíció (3.4, 2, 11.66). Ehelyett lenne: (3,2,12) */
     
     void Update()
     {
-
+        /* Vector3 position = new Vector3(x, y, z);
+        
+        float x = Mathf.Round(position.x);
+        float y = Mathf.Round(position.y);
+        float z = Mathf.Round(position.z);
+        
+        position = transform.position; */
     }
 }
-// valószínûleg Mathf.Round -t kell használni
+
+// ez így nem jó
