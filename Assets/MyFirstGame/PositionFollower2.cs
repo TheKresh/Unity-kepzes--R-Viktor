@@ -57,7 +57,8 @@ public class PositionFollower2 : MonoBehaviour
         float step = (endPos - startPos).magnitude;
 
         Vector3 vectorPointingToTarget = followable.position - transform.position;
-        transform.rotation = Quaternion.LookRotation(vectorPointingToTarget);
+        if (vectorPointingToTarget != Vector3.zero)
+            transform.rotation = Quaternion.LookRotation(vectorPointingToTarget);
 
         stamina -= step;
         if (stamina <= 0)

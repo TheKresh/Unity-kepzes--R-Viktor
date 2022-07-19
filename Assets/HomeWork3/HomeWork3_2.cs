@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[ExecuteInEditMode]
 public class HomeWork3_2 : MonoBehaviour
 {
     /* Írj komponenst, ami egy objektumot mindig 2 beállítható egyéb A és B objektum közötti vonalon tart.
@@ -12,21 +13,22 @@ public class HomeWork3_2 : MonoBehaviour
     [SerializeField] Transform a;
     [SerializeField] Transform b;
     [SerializeField] float f;
+    
     void Update()
     {
-        Vector3 position = a.position - b.position;
-        float x = Mathf.Clamp01(f);
+        if (a == null || b == null)
+            return;
 
-        if (x <= 0)
-            position = a.position;
-        else if (x >= 1)
-            position = b.position;
-        else if (x == 0.5)
-            position = (a.position + b.position) / 2;
-        /* else if (f == 0.4)
-            position = (a.position + b.position - v) / 2;       // v -vel valami baja van
-            float v = 0.1f; */
+        transform.position = 
+            Vector3.Lerp(a.position, b.position, f);
+    }
 
-        transform.position = position;
+    private void OnDrawGizmos()
+    {
+        float r = 0.25f;
+
+        Gizmos.DrawWireSphere(a.position, r);
+        Gizmos.DrawWireSphere(b.position, r);
+        Gizmos.DrawLine(a.position, b.position);
     }
 }
