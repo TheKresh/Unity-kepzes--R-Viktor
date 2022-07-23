@@ -28,6 +28,6 @@ public class MyMath2 : MonoBehaviour
     } */
 }
 
-/* legnagyobb közös oszto
+/* legnagyobb közös osztohoz segitseg
  * bool o = a % b == 0;
  */
