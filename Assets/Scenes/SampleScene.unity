@@ -1229,10 +1229,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c94f03fb0a068d48a27a45c9c4f7b5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startValue: 5
-  endValue: 20
-  interpolation: 5.5
-  interpolated: 87.5
+  startValue: 0
+  endValue: 0
+  interpolation: 0
+  interpolated: 0
 --- !u!4 &2055683170
 Transform:
   m_ObjectHideFlags: 0
