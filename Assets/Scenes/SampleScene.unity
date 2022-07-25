@@ -1232,7 +1232,8 @@ MonoBehaviour:
   startValue: 0
   endValue: 0
   interpolation: 0
-  interpolated: 0
+  interpolatedWithLerpUnclamped: 0
+  interpolatedWithLerp: 0
 --- !u!4 &2055683170
 Transform:
   m_ObjectHideFlags: 0

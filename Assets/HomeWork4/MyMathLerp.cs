@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MyMathLerp : MonoBehaviour
+class MyMathLerp : MonoBehaviour
 {
     /* Írjátok meg a saját verziótokat a következõ függvényekbõl:
     Mathf.LerpUnclamped, Mathf.Lerp, Vector2.Lerp
@@ -17,11 +17,13 @@ public class MyMathLerp : MonoBehaviour
     [SerializeField] float endValue;
     [SerializeField] float interpolation;
     [Space]
-    [SerializeField] float interpolated;
+    [SerializeField] float interpolatedWithLerpUnclamped;
+    [SerializeField] float interpolatedWithLerp;
 
     void OnValidate()
     {
-        interpolated = LerpUnclamped(startValue, endValue, interpolation);
+        interpolatedWithLerpUnclamped = LerpUnclamped(startValue, endValue, interpolation);
+        interpolatedWithLerp = Lerp(startValue, endValue, interpolation);
     }
 
     float LerpUnclamped(float num1, float num2, float num3)
@@ -34,5 +36,19 @@ public class MyMathLerp : MonoBehaviour
         else
             return num1 + b;
     }
-    // LerpUnclamped megoldás forrás: https://docs.unity3d.com/ScriptReference/Mathf.LerpUnclamped.html
+    // LerpUnclamped forrás: https://docs.unity3d.com/ScriptReference/Mathf.LerpUnclamped.html
+
+    float Lerp(float num1, float num2, float num3)
+    {
+        float a = num1 + (num2 - num1) * Mathf.Clamp01(num3);
+
+        if (a <= 0)
+            return 0;
+        else if (a >= 1)
+            return 1;
+        else
+            return LerpUnclamped(num1, num2, num3);
+    }
+    /* Lerp forrás: https://docs.unity3d.com/ScriptReference/Mathf.Lerp.html 
+     * Youtube - [Unity] The Essence of Lerp: https://www.youtube.com/watch?v=WNoizdtEPA4&ab_channel=AcaciaDeveloper */
 }

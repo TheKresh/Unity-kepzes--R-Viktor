@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 43
+  controlID: 17
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,22 +317,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/HomeWork3
+    - Assets/HomeWork2
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/HomeWork3
+  - Assets/HomeWork2
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "C:\\Users\\vikto\\OneDrive\\Asztali g\xE9p\\UnityKepzes\\Unity-kepzes--R-Viktor"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f05a0000
-    m_LastClickedID: 23280
-    m_ExpandedIDs: 00000000ee5a0000
+    m_SelectedIDs: 345b0000
+    m_LastClickedID: 23348
+    m_ExpandedIDs: 000000002e5b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -488,9 +488,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 805b0000
-      m_LastClickedID: 23424
-      m_ExpandedIDs: 84f9ffff1efbffff805b0000
+      m_SelectedIDs: f2f5ffff
+      m_LastClickedID: -2574
+      m_ExpandedIDs: daf9ffff36fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -739,9 +739,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.7410212, y: 4.727629, z: -11.495621}
+    m_Target: {x: 1.0965736, y: 0.18104887, z: -10.470602}
     speed: 2
-    m_Value: {x: 1.7410212, y: 4.727629, z: -11.495621}
+    m_Value: {x: 1.0965736, y: 0.18104887, z: -10.470602}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -792,9 +792,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.001380336, y: 0.9936034, z: -0.1122545, w: 0.012218473}
   m_Size:
-    m_Target: 15.866348
+    m_Target: 11.764198
     speed: 2
-    m_Value: 15.183108
+    m_Value: 11.764198
   m_Ortho:
     m_Target: 0
     speed: 2
